@@ -10,7 +10,7 @@ package ordenamiento;
  *
  * @author Adolfo
  */
-public class SelectionSort {
+public class SelectionSort extends Ordenador{
     private int[] arregloOrdenado;
 
     public SelectionSort(int[] lista) {
