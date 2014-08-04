@@ -12,22 +12,27 @@ package ordenamiento;
 
 /**
  *
- * @author Adolfo
+ * @author Luis
  */
 public class SortFactory {
     public Ordenador ordena;
+    public int[] arregloOrdenado;
 
 public SortFactory() {
     }
 public void selecOrdenador(int [] val, int opcion){
     if (opcion==1){
+        ordena = new SelectionSort(val);
         
     }if (opcion==2){
+        ordena = new MergeSort(val);
         
     }if(opcion == 3){
         ordena = new BubbleSort(val);
+        
     }if(opcion == 4){
         ordena = new QuickSort(val);
+        
     }
 }    
 

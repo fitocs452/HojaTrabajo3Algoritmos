@@ -3,9 +3,8 @@
  * Luis Duarte, 13003
  * Javier Merida 13269
  * Kevin Rivera 13389
- * AbirJFileChooser.java
- Guatemala 31 de 07 de 2014
- Descripción: Clase que permite encontrar el path de un archivo
+ * MergeSort.java
+ Guatemala 03 de 08 de 2014
  */
 package ordenamiento;
 
@@ -15,14 +14,14 @@ public class MergeSort extends Ordenador{
     private int[] helper;
     private int number;
 
-    public void sort(int[] values) {
+    public MergeSort(int[] values) {
         this.numbers = values;
         number = values.length;
         this.helper = new int[number];
         mergesort(0, number - 1);
     }
 
-    private void mergesort(int low, int high) {
+    public void mergesort(int low, int high) {
     // check if low is smaller then high, if not then the array is sorted
         if (low < high) {
             // Get the index of the element which is in the middle
@@ -36,7 +35,7 @@ public class MergeSort extends Ordenador{
         }
     }
 
-    private int[] merge(int low, int middle, int high) {
+    public int[] merge(int low, int middle, int high) {
 
         // Copy both parts into the helper array
         for (int i = low; i <= high; i++) {

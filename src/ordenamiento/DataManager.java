@@ -3,7 +3,7 @@
  * Luis Duarte, 13003
  * Javier Merida 13269
  * Kevin Rivera 13389
- * AbirJFileChooser.java
+ * DataManager.java
  Guatemala 31 de 07 de 2014
  Descripción: Clase que permite encontrar el path de un archivo
  */

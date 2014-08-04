@@ -57,11 +57,26 @@ public class Ordenamiento {
         /*********** Implementamos el Factory Pattern ***********************************/
         SortFactory factory = new SortFactory();
         
-        //Aquí prueben su algoritmo mucha !!!!!!!!!!!!!
-        //Con el arreglo de enteros que ya hice arriba que es int[] archivo
-        
-        
-        
+        /*******************************************************************************/
+        boolean salir = false;
+        while(salir == false){
+            int opcion = Integer.parseInt(JOptionPane.showInputDialog(
+                        "Bienvenido al Ordenamiento: "+ "\n" +
+                        "Seleccion de algoritmo de ordenamiento: "+"\n"+
+                        " 1. Selection Sort. "+ "\n" +
+                        " 2. Merge Sort. "+ "\n" +
+                        " 3. Bubble Sort. "+ "\n" +
+                        " 4. Quick Sort. "+   "\n" +     
+                        " 5. Salir Programa. "+   "\n" +  
+                                    "\n"+
+                        "Ingresa una opcion:"));
+
+            if(opcion != 5){
+            factory.selecOrdenador(archivo, opcion);
+            }else{
+                salir = true;
+            }
+        }
         
         
         /********************************************************************************/
