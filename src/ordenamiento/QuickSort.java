@@ -16,12 +16,9 @@ package ordenamiento;
  * @author Adolfo
  */
 public class QuickSort extends Ordenador{
-
-    private int[] numeros;
-
     public QuickSort(int[] values) {
-        this.numeros = values;
-        numeros = quicksort();
+        valores = values;
+        valores = quicksort();
     }
     
     public int[] quicksort(){
@@ -30,7 +27,7 @@ public class QuickSort extends Ordenador{
                     - el pivote para particionar la lista en el principio, que en nuestro caso
                         es tambien mi first index o minimium index
                     - el last index o maximium index*/
-        return quicksort(numeros, 0, numeros.length-1);
+        return quicksort(valores, 0, valores.length-1);
     }
     
     public int[] quicksort(int numeros[], int izq, int der){

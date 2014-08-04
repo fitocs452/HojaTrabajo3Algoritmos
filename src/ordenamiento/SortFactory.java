@@ -12,7 +12,7 @@ package ordenamiento;
 
 /**
  *
- * @author Luis
+ * @author Adolfo
  */
 public class SortFactory {
     public Ordenador ordena;
@@ -23,16 +23,21 @@ public SortFactory() {
 public void selecOrdenador(int [] val, int opcion){
     if (opcion==1){
         ordena = new SelectionSort(val);
+        System.out.println("Valores Ordenados");
+        ordena.toString();
         
     }if (opcion==2){
         ordena = new MergeSort(val);
-        
+        System.out.println("Valores Ordenados");
+        ordena.toString();
     }if(opcion == 3){
         ordena = new BubbleSort(val);
-        
+         System.out.println("Valores Ordenados");
+        ordena.toString();
     }if(opcion == 4){
         ordena = new QuickSort(val);
-        
+        System.out.println("Valores Ordenados");
+        ordena.toString();
     }
 }    
 

@@ -3,13 +3,13 @@
  * Luis Duarte, 13003
  * Javier Merida 13269
  * Kevin Rivera 13389
- * MergeSort.java
- Guatemala 03 de 08 de 2014
+ * AbirJFileChooser.java
+ Guatemala 31 de 07 de 2014
+ Descripción: Clase que permite encontrar el path de un archivo
  */
 package ordenamiento;
 
 public class MergeSort extends Ordenador{
-    private int[] arregloOrdenado;
     private int[] numbers;
     private int[] helper;
     private int number;
@@ -31,7 +31,7 @@ public class MergeSort extends Ordenador{
             // Sort the right side of the array
             mergesort(middle + 1, high);
             // Combine them both
-            arregloOrdenado = merge(low, middle, high);
+            valores = merge(low, middle, high);
         }
     }
 
@@ -69,7 +69,7 @@ public class MergeSort extends Ordenador{
     }
 
     public int[] getArregloOrdenado() {
-        return arregloOrdenado;
+        return valores;
     }
   
 } 

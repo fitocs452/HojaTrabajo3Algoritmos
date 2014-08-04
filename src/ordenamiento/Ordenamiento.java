@@ -10,6 +10,7 @@
 
 package ordenamiento;
 
+import java.util.Scanner;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
@@ -56,9 +57,7 @@ public class Ordenamiento {
         
         /*********** Implementamos el Factory Pattern ***********************************/
         SortFactory factory = new SortFactory();
-        
-        /*******************************************************************************/
-        boolean salir = false;
+         boolean salir = false;
         while(salir == false){
             int opcion = Integer.parseInt(JOptionPane.showInputDialog(
                         "Bienvenido al Ordenamiento: "+ "\n" +
@@ -77,6 +76,12 @@ public class Ordenamiento {
                 salir = true;
             }
         }
+        
+        //Aquí prueben su algoritmo mucha !!!!!!!!!!!!!
+        //Con el arreglo de enteros que ya hice arriba que es int[] archivo
+        
+        
+        
         
         
         /********************************************************************************/

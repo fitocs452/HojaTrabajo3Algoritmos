@@ -17,7 +17,7 @@ public class BubbleSort extends Ordenador {
 //Creamos el constructor, recibe de parametros la lista a ordenar 
 public BubbleSort(int [] lista) {
     this.lista=lista;
-    bubble();
+    valores=bubble();
     toString();
 
 }
@@ -51,13 +51,5 @@ public int [] bubble (){
     return lista;
 }
 
-    @Override
-    //metodo que imprime los valores de la lista 
-public String toString() {
-    for (int i=0; i<(lista.length);i++){
-        System.out.println(lista[i]);
-        }
-    return null;
-    }
 }
  
